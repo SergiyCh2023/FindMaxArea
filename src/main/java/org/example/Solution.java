@@ -3,6 +3,9 @@ package org.example;
 public class Solution {
 
     public int findMaxArea(int [] array) {
+
+        if (array.length == 1) throw new OneElementException();
+
         int tempArea = 0;
         int maxArea = 0;
 
